@@ -10,7 +10,7 @@ form.addEventListener('submit', async e => {
     const email = emailInput.value;
     const password = passwordInput.value;
     const { data: credentials } = await axios.post(
-      'http://localhost:3003/api/login',
+      '/api/login',
       { email, password }
     );
     window.location.replace(`/app/${credentials.userId}`);

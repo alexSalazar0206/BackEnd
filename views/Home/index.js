@@ -37,7 +37,7 @@ form.addEventListener('submit', async e => {
             email: emailInput.value,
             password: passwordInput.value
         }
-        const response = await fetch('http://localhost:3003/api/users', {
+        const response = await fetch('/api/users', {
             method: 'POST', 
             headers:{
             'Content-Type': 'application/json'
