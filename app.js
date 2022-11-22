@@ -32,7 +32,7 @@ app.use('/api/login', loginRouter);
 app.use('/api/logout', logoutRouter);
 app.use('/api/todos', authExtractor, todosRouter);
 
-app.use('/', express.static(path.resolve(__dirname, 'views', 'home')));
+app.use('/', express.static(path.resolve(__dirname, 'views', 'Home')));
 app.use('/singUp', express.static(path.resolve(__dirname, 'views', 'singUp')));
 app.use('/login', express.static(path.resolve(__dirname, 'views', 'login')));
 app.use('/app/:id', express.static(path.resolve(__dirname, 'views', 'app')));
